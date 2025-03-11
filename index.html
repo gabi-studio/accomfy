@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Accommodation Listings</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <!-- Brand Name -->
+            <a href="#" class="brand">Accomfy</a>
+    
+            <!-- Navigation Links -->
+            <ul class="nav-links">
+                <li><a href="#">List Your Home</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="/student-register.html">Register</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+
+    <div class="container">
+        <!-- hero and search section -->
+        <div class="hero-container">
+            <img src="assets/accomfy-hero.jpg" class="hero-image" alt="Student Accommodation">
+            <div class="hero-text">
+                <h1>Accomfy: Comfort in your Accommodation</h1>
+                <p>Search for the perfect student accommodation that fits your budget and preferences.</p>
+            </div>
+
+            <div class="search-container">
+                <form method="GET" class="search-form">
+                    <input type="text" name="search" class="search-field" placeholder="Search by Location, Price, Property Type">
+                    <button type="submit" class="btn">Search</button>
+                </form>
+            </div>
+        </div>
+    
+
+        
+
+        <!-- Filter Form -->
+        <form method="GET" class="filter-form">
+            <div class="filters">
+                
+                <div class="options">
+                    <label for="propertyType">Property Type:</label>
+                    <select name="propertyType" class="filter-field">
+                        <option value="">All</option>
+                        <option value="Apartment">Apartment</option>
+                        <option value="House">House</option>
+                        <option value="Dorm">Dorm</option>
+                        <option value="Shared Room">Shared Room</option>
+                    </select>
+                </div>
+
+                <div class="options">
+                    <label for="price">Max Rent ($/month):</label>
+                    <select name="price" class="filter-field">
+                        <option value="">Any</option>
+                        <option value="500">$500</option>
+                        <option value="750">$750</option>
+                        <option value="1000">$1000</option>
+                        <option value="1500">$1500</option>
+                    </select>
+                </div>
+
+                <div class="options">
+                    <label for="location">Location:</label>
+                    <select name="location" class="filter-field">
+                        <option value="">All</option>
+                        <option value="Downtown">Downtown</option>
+                        <option value="Suburbs">Suburbs</option>
+                        <option value="Near Campus">Near Campus</option>
+                    </select>
+                </div>
+
+                <div class="options">
+                    <label for="furnishing">Furnishing:</label>
+                    <select name="furnishing" class="filter-field">
+                        <option value="">All</option>
+                        <option value="Furnished">Furnished</option>
+                        <option value="Semi-Furnished">Semi-Furnished</option>
+                        <option value="Unfurnished">Unfurnished</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn">Filter</button>
+            </div>
+        </form>
+
+        <!-- Listings Container -->
+        <div class="listings-container">
+
+            <div class="listing-card">
+                <div class="card">
+                    <a href="#"><img src="assets/cozy-apartment-near-campus.jpg" class="card-image" alt="Apartment Near Campus"></a>
+                    <div class="card-body">
+                        <h2>Cozy Apartment Near Campus</h2>
+                        <p><strong>Location:</strong> Downtown</p>
+                        <p><strong>Price:</strong> $850/month</p>
+                        <p><strong>Property Type:</strong> Apartment</p>
+                        <p><strong>Furnishing:</strong> Fully Furnished</p>
+                        <p><strong>Available From:</strong> April 2025</p>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="listing-card">
+                <div class="card">
+                    <a href="#"><img src="assets/house-for-3.png" class="card-image" alt="House for Students"></a>
+                    <div class="card-body">
+                        <h2>Spacious House for 3 Students</h2>
+                        <p><strong>Location:</strong> Suburbs</p>
+                        <p><strong>Price:</strong> $1200/month</p>
+                        <p><strong>Property Type:</strong> House</p>
+                        <p><strong>Furnishing:</strong> Unfurnished</p>
+                        <p><strong>Available From:</strong> May 2025</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="listing-card">
+                <div class="card">
+                    <a href="#"><img src="/assets/student-dorm.jpg" class="card-image" alt="Student Dorm Room"></a>
+                    <div class="card-body">
+                        <h2>Shared Room in Student Dorm</h2>
+                        <p><strong>Location:</strong> Near Campus</p>
+                        <p><strong>Price:</strong> $500/month</p>
+                        <p><strong>Property Type:</strong> Dorm</p>
+                        <p><strong>Furnishing:</strong> Semi-Furnished</p>
+                        <p><strong>Available From:</strong> September 2025</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <p class="copyright">&copy; 2025 Accomfy</p>
+    </footer>
+    
+</body>
+</html>

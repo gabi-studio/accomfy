@@ -68,13 +68,14 @@ p {
     background-color: #d8e5e7;
     color: white;
     padding: 15px 20px;
+    margin:0;
 }
 
 .nav-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
+    max-width: auto;
     margin: 0 auto;
 }
 
@@ -103,7 +104,7 @@ p {
     color: #302e22;
     font-size: 1rem;
     padding: 8px 12px;
-    border-radius: 5px;
+    border-radius: 12px;
     transition: background 0.3s ease;
 }
 
@@ -132,8 +133,8 @@ p {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    opacity: 0.6;
-    filter:brightness(90%);
+    opacity: 0.5;
+    filter:brightness(110%);
 }
 
 .hero-text {
@@ -151,7 +152,7 @@ p {
 
 .hero-text h1 {
     font-size: 2.5rem;
-    font-weight: 700;
+    font-weight: 900;
     font-family: 'Raleway', sans-serif;
     
     
@@ -159,6 +160,7 @@ p {
 }
 
 .hero-text p {
+    font-weight: 500;
     font-size: 1.2rem;
     margin-top: 10px;
 }
@@ -173,7 +175,7 @@ p {
     max-width: 700px;
     background: rgba(255, 255, 255, 0.75);
     padding: 20px;
-    border-radius: 15px;
+    border-radius: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -192,9 +194,9 @@ p {
     padding: 12px;
     font-size: 1rem;
     border: 2px solid #302e22;
-    border-radius: 8px;
+    border-radius: 12px;
     outline: none;
-    margin-right: 15px;
+    margin-right: 20px;
     
 }
 
@@ -204,7 +206,7 @@ p {
     background: #302e22;
     color: white;
     border: none;
-    border-radius: 0 5px 5px 0;
+    border-radius: 0 20px 20px 0;
     cursor: pointer;
     font-size: 1rem;
     transition: background 0.3s ease;
@@ -262,14 +264,15 @@ p {
     display: flex;
     justify-content:center;
     align-items: center;
-    padding: 2rem;
+    padding: 1rem;
     background: #ffffff;
     /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);*/
-    box-shadow: inset 0 -10px 30px -10px #d8d8d6;
+    /* box-shadow: inset 0 -10px 30px -10px #f2f2f2; */
 }
     
 .filter-field {
     padding: 10px;
+    background-color: #f4f4f4;
     border: #302e22;
     border-radius: 5px;
     width: 100%;
@@ -298,6 +301,13 @@ p {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+label {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #302e22;
+    
+}
+
 .card-image {
     width: 100%;
     height: 200px;
@@ -312,7 +322,7 @@ p {
     background: #302e22;
     color: #fff;
     border: none;
-    border-radius: 5px;
+    border-radius: 20px;
     cursor: pointer;
     transition: background 0.3s ease;
 }

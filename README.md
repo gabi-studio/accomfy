@@ -5,11 +5,13 @@ This is **Accomfy**, the future home of a rental platform designed to help stude
 ## Current Features
 - First version of the **Home Page**
 - **Student/Renter Registration** Page
+- Database integration
+- Search filters
+- **Authentication & Login System** 
 
 ## Future Plans
-- Database integration
-- Advanced **Search Filters** for better search results
-- **Authentication & Login System** 
+
+
 - **Verification System** for landlords & roommates
 - Ability to **Register** and **Create Listings** for landlords or roommates
 - **AI Integration** for better student-landlord/roommate matchmaking

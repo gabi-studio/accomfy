@@ -1,113 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Accomfy</title>
-  <link rel="stylesheet" href="./css/styles.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accomfy</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <script src="./js/index.js"></script>
 </head>
 <body>
-  <header class="navbar">
-    <div class="logo">🏠 Accomfy</div>
-    <nav>
-      <a href="#">Home</a>
-      <button class="btn primary">List a Property</button>
-      <button class="btn">Log in</button>
-    </nav>
-  </header>
-
-  <section class="hero">
-    <h1>Discover a place you'll<br><span>love to live</span></h1>
-    <div class="search-bar">
-      <input type="text" placeholder="Search for homes...">
-      <button><span>🔍</span></button>
+    <div class="header">
+        <nav>
+            <div class="logo">Accomfy</div>
+            <div class="nav-links">
+                <a href="#">Home</a>
+                <a href="./listing-result.html">List a Property</a>
+                <a href="./login.html">Log In</a>
+            </div>
+        </nav>
+        <h1>Discover a place you'll love to live</h1>
+        <div class="search-bar">
+            <input type="text" placeholder="Explore Cities To Find Your Next Home">
+            <button>Search</button>
+        </div>
+        <p style="font-size: 18px; color: #e0e0e0;">Explore Cities To Find Your Next Home</p>
     </div>
-  </section>
-
-  <section class="cities">
-    <h2>Explore Cities To Find Your Next Home</h2>
-    <div class="city-tags">
-      <button>Etobicoke</button>
-      <button>Mississauga</button>
-      <button>North York</button>
-      <button>Scarborough</button>
-      <button>Toronto</button>
+    <div class="explore-cities">
+        <div class="city-card">
+            <img src="./images/accomfy1.jpg" alt="Humber College">
+            <div class="card-content">
+                <h3>Humber College</h3>
+                <div class="price">$1200/month</div>
+            </div>
+        </div>
+        <div class="city-card">
+            <img src="./images/accomfy2.jpg" alt="Centennial">
+            <div class="card-content">
+                <h3>Centennial</h3>
+                <div class="price">$1100/month</div>
+            </div>
+        </div>
+        <div class="city-card">
+            <img src="./images/accomfy3.jpg" alt="University of Toronto">
+            <div class="card-content">
+                <h3>University of Toronto</h3>
+                <div class="price">$1500/month</div>
+            </div>
+        </div>
+        <div class="city-card">
+            <img src="./images/accomfy4.jpg" alt="George Brown">
+            <div class="card-content">
+                <h3>George Brown</h3>
+                <div class="price">$1000/month</div>
+            </div>
+        </div>
+        <div class="city-card">
+            <img src="./images/accomfy5.jpg" alt="Seneca College">
+            <div class="card-content">
+                <h3>Seneca College</h3>
+                <div class="price">$1300/month</div>
+            </div>
+        </div>
     </div>
-
-    <div class="cards">
-      <div class="card">
-        <img src="./images/accomfy1.jpg" alt="Humber College">
-        <p>Humber College</p>
-      </div>
-      <div class="card">
-        <img src="./images/accomfy2.jpg" alt="Centennial">
-        <p>Centennial</p>
-      </div>
-      <div class="card">
-        <img src="./images/accomfy3.jpg" alt="University of Toronto">
-        <p>University of Toronto</p>
-      </div>
-      <div class="card">
-        <img src="./images/accomfy4.jpg" alt="George Brown College">
-        <p>George Brown College</p>
-      </div>
-      <div class="card">
-        <img src="./images/accomfy5.jpg" alt="Seneca College">
-        <p>Seneca College</p>
-      </div>
+    <div class="why-book">
+        <h2>Why You Should Book With Us</h2>
+        <p>Take the stress out of finding your next student home. We make your journey easy, affordable, and secure with a wide range of options tailored to your needs.</p>
+        <div class="cards">
+            <div class="card"><span>🏠</span> Wide Range of Properties<br>Discover diverse student housing options across various locations.</div>
+            <div class="card"><span>🔒</span> Rent Homes to Sub-lease<br>Flexible renting for semesters or academic schedules.</div>
+            <div class="card"><span>✅</span> Trusted Property Listing<br>Expert support ensures a confident and secure booking process.</div>
+        </div>
     </div>
-  </section>
-
-  <section class="why-us">
-    <h2>Why You Should Book With Us</h2>
-    <div class="benefits">
-      <div><h4>Best Price Guarantee</h4></div>
-      <div><h4>Verified Homes</h4></div>
-      <div><h4>24/7 Support</h4></div>
+    <div class="how-it-works">
+        <div class="steps">
+            <h2>How it works? Rent Your Home</h2>
+            <p><span>📝</span> Create an Account<br>Sign up with your email to start your profile quickly and securely.</p>
+            <p><span>📤</span> Upload documents<br>Add high-quality photos and details about your space, including rent and amenities.</p>
+            <p><span>✅</span> Get Verified<br>Our team reviews your listing for accuracy and safety before it goes live.</p>
+        </div>
+        <img src="https://images.unsplash.com/photo-1518780664697-55e3ad937233?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Building">
     </div>
-  </section>
-
-  <section class="how-it-works">
-    <h2>How it works? Rent Your Home</h2>
-    <div class="steps">
-      <div><h4>Step 1</h4><p>Create an account</p></div>
-      <div><h4>Step 2</h4><p>List your property</p></div>
-      <div><h4>Step 3</h4><p>Start earning</p></div>
+    <div class="find-home">
+        <h2>Find your next home here</h2>
     </div>
-    <img src="./images/accomfy7.jpg" alt="Building" height="100%" width="100%">
-  </section>
-
-  <section class="find-next-home">
-    <h2>Find your next home here</h2>
-    <img src="./images/accomfy8.jpg" alt="Landscape">
-  </section>
-
-  <section class="testimonials">
-    <h2>What our community are saying us?</h2>
-    <div class="testimonial-grid">
-      <div class="testimonial">
-        <img src="./images/accomfy9.jpg" />
-        <p>“Amazing service and easy to use.”</p>
-      </div>
-      <div class="testimonial">
-        <img src="./images/accomfy10.jpg" />
-        <p>“Found my dream home here!”</p>
-      </div>
-      <div class="testimonial">
-        <img src="./images/accomfy11.jpg" />
-        <p>“Support team was very responsive.”</p>
-      </div>
+    <div class="community">
+        <h2>What our community are saying</h2>
+        <div class="reviews">
+            <div class="review"><img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=70&q=80" alt="Cameron Williamson"><p>"Finding student rentals was a nightmare, but Accoffy made it simple. The platform's booking process was fast and reliable."</p></div>
+            <div class="review"><img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=70&q=80" alt="Howard"><p>"I was new to Toronto and discovered a safe, welcoming community through the platform."</p></div>
+            <div class="review"><img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=70&q=80" alt="Devon Lane"><p>"Had some questions, and the team was super helpful. Highly recommend their support!"</p></div>
+        </div>
     </div>
-  </section>
-
-  <footer>
-    <div class="footer-links">
-      <div>Help & Support</div>
-      <div>Join Us</div>
-      <div>Privacy Policy</div>
+    <div class="footer">
+        <div>
+            <h3>Help & Support</h3>
+            <a href="#">About Us</a>
+            <a href="#">FAQ</a>
+        </div>
+        <div>
+            <h3>Join Us</h3>
+            <a href="#">Community</a>
+        </div>
+        <div>
+            <h3>Privacy & Policy</h3>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Agreement</a>
+        </div>
+        <div>
+            <h3>Accoffy</h3>
+            <p>© 2025 Accoffy. All rights reserved.</p>
+        </div>
     </div>
-    <p>&copy; 2025 Accstay | All Rights Reserved.</p>
-  </footer>
-
 </body>
 </html>

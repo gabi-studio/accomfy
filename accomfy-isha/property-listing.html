@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accoffy</title>
+    <link rel="stylesheet" href="./css/profile-listing.css">
+    <script src="./js/profile-listing.js"></script>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="https://img.icons8.com/ios-filled/24/00aaff/home-page.png" alt="Home Icon">
+            Accomfy
+        </div>
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#" class="active">List a Property</a>
+            <a href="#">Profile</a>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="sidebar">
+            <h3>🇨🇦 All Filters</h3>
+            <div class="filter-group">
+                <label>Price Range (per month)</label>
+                <input type="range" min="300" max="10000" value="300" oninput="this.nextElementSibling.value = this.value">
+                <div class="price-range">
+                    <span>$300</span>
+                    <input type="number" value="1000" min="300" max="10000">
+                    <span>$1000</span>
+                </div>
+            </div>
+            <div class="filter-group">
+                <label>Room Type</label>
+                <select>
+                    <option>Kitchen</option>
+                    <option>Bathroom</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label>Amenities</label>
+                <select>
+                    <option>Select</option>
+                </select>
+            </div>
+        </div>
+        <div class="content">
+            <div class="property-section">
+                <div class="location-bar">
+                    <input type="text" placeholder="Humber Polytechnic" readonly>
+                    <button>🔍</button>
+                </div>
+                <div class="breadcrumbs">Home > Humber Polytechnic | Showing 205 places</div>
+                <div class="filters">
+                    <div class="filter-group">
+                        <select>
+                            <option>🇨🇦 All Filters</option>
+                        </select>
+                        <select>
+                            <option>📅 Sort By</option>
+                        </select>
+                    </div>
+                    <div class="pagination">
+                        <button>1</button>
+                        <button class="active">2</button>
+                        <button>3</button>
+                        <button class="next">Next</button>
+                    </div>
+                </div>
+                <div class="property-grid">
+                    <div class="property-card">
+                        <span class="wishlist">❤️</span>
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=250&q=80" alt="258 John Garland">
+                        <div class="card-content">
+                            <h3>258 John Garland</h3>
+                            <div class="price">CAD 700 / Month</div>
+                            <div class="details">🏠 Beds: 2 | 🛁 Baths: 2 | 🏢 Sqft: 1150</div>
+                            <div class="meta">1 month ago <span class="compare">+ Compare</span></div>
+                        </div>
+                    </div>
+                    <div class="property-card">
+                        <span class="wishlist">❤️</span>
+                        <img src="https://images.unsplash.com/photo-1518780664697-55e3ad937233?ixlib=rb-4.0.3&auto=format&fit=crop&w=250&q=80" alt="Downtown 2BR Apartment">
+                        <div class="card-content">
+                            <h3>Downtown 2BR Apartment</h3>
+                            <div class="price">CAD 950 / Month</div>
+                            <div class="details">🏠 Beds: 2 | 🛁 Baths: 1 | 🏢 Sqft: 950</div>
+                            <div class="meta">1 month ago <span class="compare">+ Compare</span></div>
+                        </div>
+                    </div>
+                    <div class="property-card">
+                        <span class="wishlist">❤️</span>
+                        <img src="https://images.unsplash.com/photo-1600585154493-2a8f8a2783e8?ixlib=rb-4.0.3&auto=format&fit=crop&w=250&q=80" alt="Cozy Studio Near Campus">
+                        <div class="card-content">
+                            <h3>Cozy Studio Near Campus</h3>
+                            <div class="price">CAD 650 / Month</div>
+                            <div class="details">🏠 Beds: 1 | 🛁 Baths: 1 | 🏢 Sqft: 600</div>
+                            <div class="meta">1 month ago <span class="compare">+ Compare</span></div>
+                        </div>
+                    </div>
+                    <div class="property-card">
+                        <span class="wishlist">❤️</span>
+                        <img src="https://images.unsplash.com/photo-1617174039851-6914a63c9c9e?ixlib=rb-4.0.3&auto=format&fit=crop&w=250&q=80" alt="Luxury 1BR Loft">
+                        <div class="card-content">
+                            <h3>Luxury 1BR Loft</h3>
+                            <div class="price">CAD 1400 / Month</div>
+                            <div class="details">🏠 Beds: 1 | 🛁 Baths: 1 | 🏢 Sqft: 950</div>
+                            <div class="meta">1 month ago <span class="compare">+ Compare</span></div>
+                        </div>
+                    </div>
+                    <div class="property-card">
+                        <span class="wishlist">❤️</span>
+                        <img src="https://images.unsplash.com/photo-1519451241320-0a2e5b50e7e2?ixlib=rb-4.0.3&auto=format&fit=crop&w=250&q=80" alt="Basement in Quiet Suburb">
+                        <div class="card-content">
+                            <h3>Basement in Quiet Suburb</h3>
+                            <div class="price">CAD 800 / Month</div>
+                            <div class="details">🏠 Beds: 1 | 🛁 Baths: 1 | 🏢 Sqft: 700</div>
+                            <div class="meta">1 month ago <span class="compare">+ Compare</span></div>
+                        </div>
+                    </div>
+                    <div class="property-card">
+                        <span class="wishlist">❤️</span>
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=250&q=80" alt="Furnished 3BR Family Home">
+                        <div class="card-content">
+                            <h3>Furnished 3BR Family Home</h3>
+                            <div class="price">CAD 2000 / Month</div>
+                            <div class="details">🏠 Beds: 3 | 🛁 Baths: 2.5 | 🏢 Sqft: 1800</div>
+                            <div class="meta">1 month ago <span class="compare">+ Compare</span></div>
+                        </div>
+                    </div>
+                    <div class="property-card">
+                        <span class="wishlist">❤️</span>
+                        <img src="https://images.unsplash.com/photo-1518780664697-55e3ad937233?ixlib=rb-4.0.3&auto=format&fit=crop&w=250&q=80" alt="Student Housing Studio Pod">
+                        <div class="card-content">
+                            <h3>Student Housing Studio Pod</h3>
+                            <div class="price">CAD 900 / Month</div>
+                            <div class="details">🏠 Beds: Studio | 🛁 Baths: 1 | 🏢 Sqft: 400</div>
+                            <div class="meta">1 month ago <span class="compare">+ Compare</span></div>
+                        </div>
+                    </div>
+                    <div class="property-card">
+                        <span class="wishlist">❤️</span>
+                        <img src="https://images.unsplash.com/photo-1600585154493-2a8f8a2783e8?ixlib=rb-4.0.3&auto=format&fit=crop&w=250&q=80" alt="Affordable Room Shared Flat">
+                        <div class="card-content">
+                            <h3>Affordable Room Shared Flat</h3>
+                            <div class="price">CAD 600 / Month</div>
+                            <div class="details">🏠 Beds: 1 | 🛁 Baths: 1 | 🏢 Sqft: 300</div>
+                            <div class="meta">1 month ago <span class="compare">+ Compare</span></div>
+                        </div>
+                    </div>
+                    <div class="property-card">
+                        <span class="wishlist">❤️</span>
+                        <img src="https://images.unsplash.com/photo-1617174039851-6914a63c9c9e?ixlib=rb-4.0.3&auto=format&fit=crop&w=250&q=80" alt="Newly Renovated 2BR Condo">
+                        <div class="card-content">
+                            <h3>Newly Renovated 2BR Condo</h3>
+                            <div class="price">CAD 1200 / Month</div>
+                            <div class="details">🏠 Beds: 2 | 🛁 Baths: 2 | 🏢 Sqft: 1000</div>
+                            <div class="meta">1 month ago <span class="compare">+ Compare</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div>
+            <h3>Help & Support</h3>
+            <a href="#">About Us</a>
+            <a href="#">Contact Us</a>
+            <a href="#">FAQs</a>
+        </div>
+        <div>
+            <h3>Join Us</h3>
+            <a href="#">Careers</a>
+            <a href="#">Community</a>
+        </div>
+        <div>
+            <h3>Privacy & Policy</h3>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Agreement</a>
+        </div>
+        <div>
+            <h3>Accoffy</h3>
+            <p>© 2025 Accoffy. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>

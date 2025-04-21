@@ -1,108 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Wishlist - Accoffy</title>
-    <link rel="stylesheet" href="./css/wishlist.css">
+    <link rel="stylesheet" href="./css/wishlist.css" />
     <script src="./js/wishlist.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <!-- Header -->
-    <div class="navbar">
-        <div class="logo">
-            <img src="https://img.icons8.com/ios-filled/24/00aaff/home-page.png" alt="Home Icon">
-            Accoffy
-        </div>
-        <div class="nav-links">
-            <a href="#" class="nav-link">Home</a>
-            <a href="#" class="nav-link active">List a Property</a>
-            <a href="#" class="nav-link">Profile</a>
-        </div>
-    </div>
+    <header class="main-header">
+      <div class="logo">
+        <img
+          src="/assets/Accomfy Logo.png"
+          alt="Accomfy Logo"
+          width="150px"
+          height="70px"
+        />
+      </div>
+      <nav>
+        <a href="#" class="home">Home</a>
+        <a href="#" class="btn-outline" style="color: white">List a Property</a>
+        <a href="#">Log In</a>
+      </nav>
+    </header>
 
     <!-- Main Content -->
     <div class="container">
-        <h1><span class="heart-icon">❤️</span> Wishlist</h1>
-        <div class="wishlist-grid">
-            <div class="property-card">
-                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=250&q=80" alt="258 John Garland">
-                <h3>258 John Garland</h3>
-                <p>Etobicoke, Ontario, CA</p>
-                <div class="price">CAD 700 / Month</div>
-                <div class="details">🏠 Beds: 4 | 🛁 Baths: 2 | 🏢 Sqft: 1150</div>
-            </div>
-            <div class="property-card">
-                <img src="https://images.unsplash.com/photo-1518780664697-55e3ad937233?ixlib=rb-4.0.3&auto=format&fit=crop&w=250&q=80" alt="1900 Shepard Avenue">
-                <h3>1900 Shepard Avenue</h3>
-                <p>North York, Ontario, CA</p>
-                <div class="price">CAD 800 / Month</div>
-                <div class="details">🏠 Beds: 3 | 🛁 Baths: 1 | 🏢 Sqft: 950</div>
-            </div>
-            <div class="property-card">
-                <img src="./images/accomfy14.jpg" alt="1383 Bobolink Crt">
-                <h3>1383 Bobolink Crt</h3>
-                <p>Scarborough, Ontario, CA</p>
-                <div class="price">CAD 650 / Month</div>
-                <div class="details">🏠 Beds: 4 | 🛁 Baths: 3 | 🏢 Sqft: 1800</div>
-            </div>
-            <div class="property-card">
-                <img src="./images/accomfy13.jpg" alt="2000 John Crescent">
-                <h3>2000 John Crescent</h3>
-                <p>Etobicoke, Ontario, CA</p>
-                <div class="price">CAD 925 / Month</div>
-                <div class="details">🏠 Beds: 4 | 🛁 Baths: 2 | 🏢 Sqft: 1200</div>
-            </div>
-            <div class="property-card">
-                <img src="./images/accomfy4.jpg" alt="368 Humber Blvd">
-                <h3>368 Humber Blvd</h3>
-                <p>Etobicoke, Ontario, CA</p>
-                <div class="price">CAD 750 / Month</div>
-                <div class="details">🏠 Beds: 4 | 🛁 Baths: 3 | 🏢 Sqft: 1400</div>
-            </div>
-            <div class="property-card">
-                <img src="./images/accomfy8.jpg" alt="6969 Square West">
-                <h3>6969 Square West</h3>
-                <p>Mississauga, Ontario, CA</p>
-                <div class="price">CAD 1000 / Month</div>
-                <div class="details">🏠 Beds: 4 | 🛁 Baths: 2 | 🏢 Sqft: 1800</div>
-            </div>
+      <h1><span class="heart-icon">❤️</span> Wishlist</h1>
+      <div class="wishlist-grid">
+        <div class="property-card">
+          <img
+            src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=250&q=80"
+            alt="258 John Garland"
+          />
+          <h3>258 John Garland</h3>
+          <p>Etobicoke, Ontario, CA</p>
+          <div class="price">CAD 700 / Month</div>
+          <div class="details">🏠 Beds: 4 | 🛁 Baths: 2 | 🏢 Sqft: 1150</div>
         </div>
-        <div class="pagination">
-            <button class="prev">&lt;</button>
-            <button class="page active">1</button>
-            <button class="page">2</button>
-            <button class="page">3</button>
-            <button class="next">&gt;</button>
+        <div class="property-card">
+          <img
+            src="https://images.unsplash.com/photo-1518780664697-55e3ad937233?ixlib=rb-4.0.3&auto=format&fit=crop&w=250&q=80"
+            alt="1900 Shepard Avenue"
+          />
+          <h3>1900 Shepard Avenue</h3>
+          <p>North York, Ontario, CA</p>
+          <div class="price">CAD 800 / Month</div>
+          <div class="details">🏠 Beds: 3 | 🛁 Baths: 1 | 🏢 Sqft: 950</div>
         </div>
+        <div class="property-card">
+          <img src="./images/accomfy14.jpg" alt="1383 Bobolink Crt" />
+          <h3>1383 Bobolink Crt</h3>
+          <p>Scarborough, Ontario, CA</p>
+          <div class="price">CAD 650 / Month</div>
+          <div class="details">🏠 Beds: 4 | 🛁 Baths: 3 | 🏢 Sqft: 1800</div>
+        </div>
+        <div class="property-card">
+          <img src="./images/accomfy13.jpg" alt="2000 John Crescent" />
+          <h3>2000 John Crescent</h3>
+          <p>Etobicoke, Ontario, CA</p>
+          <div class="price">CAD 925 / Month</div>
+          <div class="details">🏠 Beds: 4 | 🛁 Baths: 2 | 🏢 Sqft: 1200</div>
+        </div>
+        <div class="property-card">
+          <img src="./images/accomfy4.jpg" alt="368 Humber Blvd" />
+          <h3>368 Humber Blvd</h3>
+          <p>Etobicoke, Ontario, CA</p>
+          <div class="price">CAD 750 / Month</div>
+          <div class="details">🏠 Beds: 4 | 🛁 Baths: 3 | 🏢 Sqft: 1400</div>
+        </div>
+        <div class="property-card">
+          <img src="./images/accomfy8.jpg" alt="6969 Square West" />
+          <h3>6969 Square West</h3>
+          <p>Mississauga, Ontario, CA</p>
+          <div class="price">CAD 1000 / Month</div>
+          <div class="details">🏠 Beds: 4 | 🛁 Baths: 2 | 🏢 Sqft: 1800</div>
+        </div>
+      </div>
+      <div class="pagination">
+        <button class="prev">&lt;</button>
+        <button class="page active">1</button>
+        <button class="page">2</button>
+        <button class="page">3</button>
+        <button class="next">&gt;</button>
+      </div>
     </div>
 
-    <!-- Footer -->
-    <div class="footer">
-        <div class="footer-section">
-            <h3>Help & Support</h3>
-            <a href="#">About Us</a>
-            <a href="#">Contact Us</a>
-            <a href="#">FAQs</a>
-        </div>
-        <div class="footer-section">
-            <h3>Join Us</h3>
-            <a href="#">Careers</a>
-            <a href="#">Community</a>
-        </div>
-        <div class="footer-section">
-            <h3>Privacy & Policy</h3>
-            <a href="#">Privacy Policy</a>
-            <a href="#">Agreement</a>
-        </div>
-        <div class="footer-section">
-            <h3>Accoffy</h3>
-            <div class="logo">
-                <img src="https://img.icons8.com/ios-filled/24/ffffff/home-page.png" alt="Home Icon">
-                Accoffy
-            </div>
-            <p>© 2025 Accoffy. All rights reserved.</p>
-        </div>
-    </div>
-</body>
+    <!-- footer -->
+    <footer class="footer">
+      <div class="footer-column">
+        <h3>Help & Support</h3>
+        <a href="#">About Us</a>
+        <a href="#">Contact Us</a>
+        <a href="#">FAQs</a>
+      </div>
+      <div class="footer-column">
+        <h3>Join Us</h3>
+        <a href="#">Careers</a>
+        <a href="#">Community</a>
+      </div>
+      <div class="footer-column">
+        <h3>Privacy & Policy</h3>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Agreement</a>
+      </div>
+      <div class="footer-column">
+        <img
+          src="/assets/white logo.png"
+          alt="Accomfy Logo"
+          width="150px"
+          height="70px"
+        />
+        <p>&copy; 2025 Accoffy. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
 </html>

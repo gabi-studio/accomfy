@@ -1,104 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign Up - Accoffy</title>
-    <link rel="stylesheet" href="./css/signup.css">
+    <link rel="stylesheet" href="./css/signup.css" />
     <script src="./js/signup.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <!-- Navigation -->
-    <nav class="navbar">
-        <div class="logo">
-            <img src="https://img.icons8.com/ios-filled/24/00aaff/home-page.png" alt="Home Icon">
-            Accoffy
-        </div>
-        <div class="nav-links">
-            <a href="#" class="nav-link">Home</a>
-            <button class="btn primary">
-                List a Property
-                <img src="https://img.icons8.com/ios-filled/24/ffffff/home-page.png" alt="House Icon" class="btn-icon">
-            </button>
-            <button class="btn">Log in</button>
-        </div>
-    </nav>
+    <!-- <nav class="navbar">
+      <div class="logo">
+        <img
+          src="/assets/Accomfy Logo.png"
+          alt="Accomfy Logo"
+          width="150px"
+          height="70px"
+        />
+      </div>
+      <div class="nav-links">
+        <a href="#" class="nav-link">Home</a>
+        <button class="btn primary">
+          List a Property
+          <img
+            src="https://img.icons8.com/ios-filled/24/ffffff/home-page.png"
+            alt="House Icon"
+            class="btn-icon"
+          />
+        </button>
+        <button class="btn">Log in</button>
+      </div>
+    </nav> -->
+
+    <header class="main-header">
+      <div class="logo">
+        <img
+          src="/assets/Accomfy Logo.png"
+          alt="Accomfy Logo"
+          width="150px"
+          height="70px"
+        />
+      </div>
+      <nav>
+        <a href="#" class="home">Home</a>
+        <a href="#" class="btn-outline" style="color: white">List a Property</a>
+        <a href="#">Log In</a>
+      </nav>
+    </header>
 
     <!-- Main Content -->
-    <main>
+    <main class="signup-container">
+      <a href="#" class="back-link">&larr; Back</a>
+
+      <div class="signup-content">
         <!-- Left Section -->
         <section class="left-section">
-            <a href="#" class="back-link">&larr; Back</a>
-            <h1>Easy way to List a perfect property!</h1>
-            <p>We provide a complete service for the Listing, Contracting or rental real estate.</p>
+          <!-- <a href="#" class="back-link">&larr; Back</a> -->
+          <h1 style="margin-top: 20px">Easy way to List a perfect property!</h1>
+          <p>
+            We provide a complete service for the Listing, Contracting or rental
+            real estate.
+          </p>
         </section>
 
         <!-- Right Section (Sign-Up Form) -->
         <section class="right-section">
-            <div class="signup-form">
-                <h2>Sign up</h2>
-                <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" placeholder="Enter your name">
-                </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" placeholder="user@gmail.com">
-                </div>
-                <div class="form-group">
-                    <label for="password">Password</label>
-                    <input type="password" id="password" placeholder="Password">
-                    <a href="#" class="forgot-password">Forget Password?</a>
-                </div>
-                <button class="signup-btn">Login</button>
-                <div class="social-login">
-                    <p>or continue with</p>
-                    <div class="social-buttons">
-                        <button class="social-btn google">
-                            <img src="./images/flat-color-icons_google.png" alt="Google Icon">
-                            
-                        </button>
-                        <button class="social-btn facebook">
-                            <img src="./images/bi_facebook.png" alt="Facebook Icon">
-                        </button>
-                    </div>
-                    <p class="register-link">
-                        Don't have an account yet? 
-                        <a href="#">Register for free</a>
-                    </p>
-                </div>
+          <div class="signup-form">
+            <h2>Sign up</h2>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" placeholder="Enter your name" />
             </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" placeholder="user@gmail.com" />
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" id="password" placeholder="Password" />
+            </div>
+            <button class="signup-btn">Sign Up</button>
+            <div class="social-login">
+              <p>or continue with</p>
+              <div class="social-buttons">
+                <button class="social-btn google">
+                  <img
+                    src="./images/flat-color-icons_google.png"
+                    alt="Google Icon"
+                  />
+                </button>
+                <button class="social-btn facebook">
+                  <img src="./images/bi_facebook.png" alt="Facebook Icon" />
+                </button>
+              </div>
+              <p class="register-link">
+                Already have an account yet?
+                <a href="#">Login</a>
+              </p>
+            </div>
+          </div>
         </section>
+      </div>
     </main>
 
     <!-- Hero Section -->
     <section class="hero-section">
-        <h2>Discover a place you'll love to live</h2>
-        <button class="view-properties-btn">View Properties</button>
+      <h2 style="font-size: 60px; margin-bottom: 30px">
+        Discover a place you'll love to live
+      </h2>
+      <a href="#" class="view-properties-btn">View Properties →</a>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="footer-column">
-            <h3>Help & Support</h3>
-            <a href="#">About Us</a>
-            <a href="#">Contact Us</a>
-            <a href="#">FAQs</a>
-        </div>
-        <div class="footer-column">
-            <h3>Join Us</h3>
-            <a href="#">Careers</a>
-            <a href="#">Community</a>
-        </div>
-        <div class="footer-column">
-            <h3>Privacy & Policy</h3>
-            <a href="#">Privacy Policy</a>
-            <a href="#">Agreement</a>
-        </div>
-        <div class="footer-column">
-            <h3>Accoffy</h3>
-            <p>&copy; 2025 Accoffy. All rights reserved.</p>
-        </div>
+      <div class="footer-column">
+        <h3>Help & Support</h3>
+        <a href="#">About Us</a>
+        <a href="#">Contact Us</a>
+        <a href="#">FAQs</a>
+      </div>
+      <div class="footer-column">
+        <h3>Join Us</h3>
+        <a href="#">Careers</a>
+        <a href="#">Community</a>
+      </div>
+      <div class="footer-column">
+        <h3>Privacy & Policy</h3>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Agreement</a>
+      </div>
+      <div class="footer-column">
+        <img
+          src="/assets/white logo.png"
+          alt="Accomfy Logo"
+          width="150px"
+          height="70px"
+        />
+        <p>&copy; 2025 Accoffy. All rights reserved.</p>
+      </div>
     </footer>
-</body>
+  </body>
 </html>

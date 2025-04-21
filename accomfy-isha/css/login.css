@@ -1,0 +1,263 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: #ffffff;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.main-header nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #333;
+}
+
+.btn-outline {
+  border: 1px solid #0052cc;
+  padding: 8px 16px;
+  /*color: #0052cc;*/
+  border-radius: 50px;
+  background: #2246b1;
+  box-shadow: 0px 3px 19.5px 0px rgba(66, 71, 76, 0.08);
+}
+
+.login-main {
+  max-width: 1200px;
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 0 20px;
+}
+
+.login-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.left-text {
+  flex: 1;
+}
+
+form {
+  width: 452px;
+  margin-left: 35px;
+}
+
+.login-form {
+  flex: 1;
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.login-form input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+}
+
+.btn-primary {
+  background: #0052cc;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  width: 475px;
+  height: 42px;
+  flex-shrink: 0;
+}
+
+.or-divider {
+  text-align: center;
+  margin: 1rem 0;
+  font-size: 0.9rem;
+  color: #555;
+  position: relative;
+}
+
+.or-divider::before,
+.or-divider::after {
+  content: "";
+  top: 50%;
+  width: 40%;
+  height: 1px;
+  background-color: #ccc;
+}
+
+.or-divider::before {
+  left: 0;
+}
+
+.or-divider::after {
+  right: 0;
+}
+
+.btn-social {
+  background: #eee;
+  padding: 10px;
+  width: 100%;
+  margin: 8px 0;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.social-login {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.btn-social {
+  /*display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.7rem 1.5rem;
+    border: 1px solid #ccc;
+    background: white;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease;*/
+
+  border-radius: 24.174px;
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.2) 0%,
+      rgba(255, 255, 255, 0.2) 100%
+    ),
+    rgba(68, 64, 64, 0.1);
+  backdrop-filter: blur(7.554347991943359px);
+}
+
+.btn-social i {
+  font-size: 1.2rem;
+}
+
+.btn-social:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.register-text {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.9rem;
+}
+
+.info-section {
+  background: linear-gradient(to bottom, #a7b5cb, #faf5f5);
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.why-us {
+  padding: 60px 20px;
+  background: #f5faff;
+  text-align: center;
+}
+
+.reasons {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+  gap: 20px;
+}
+
+/* footer {
+  background: #1d3e93;
+  color: white;
+  padding: 40px 20px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.footer-links div {
+  font-size: 0.9rem;
+  line-height: 1.6;
+} */
+
+/* Footer Styles */
+.footer {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 20px;
+  background: #1d3e93;
+  color: #fff;
+  flex-wrap: wrap;
+}
+
+.footer-column {
+  margin: 10px;
+}
+
+.footer h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.footer a {
+  color: #e0e6eb;
+  text-decoration: none;
+  display: block;
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.footer a:hover {
+  color: #9caeef;
+  text-decoration: underline;
+}
+
+.footer p {
+  font-size: 12px;
+  color: #b0c4de;
+}
+
+h4 {
+  font-size: 24px;
+  margin-bottom: 0px;
+  margin-top: 10px;
+}
+
+.back-btn {
+  width: 80px;
+  font-size: 18px;
+  border: 1px solid white;
+  padding: 12px 16px;
+  border-radius: 50px;
+  background: white;
+  color: #333;
+  box-shadow: 0px 3px 19.5px 0px rgba(66, 71, 76, 0.08);
+  text-decoration: none;
+}

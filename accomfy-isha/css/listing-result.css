@@ -1,0 +1,212 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  .header img {
+    height: 40px;
+  }
+  .nav a {
+    margin-left: 25px;
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  .nav a:hover {
+    color: #0056b3;
+  }
+  .search-bar {
+    display: flex;
+    align-items: center;
+    padding: 10px 30px;
+    background: #fff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  }
+  .search-bar input {
+    padding: 8px;
+    width: 250px;
+    border: 1px solid #ddd;
+    border-radius: 4px 0 0 4px;
+  }
+  .search-bar button {
+    padding: 8px 15px;
+    border: none;
+    background: #007BFF;
+    color: #fff;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+  }
+  .search-bar button:hover {
+    background: #0056b3;
+  }
+  .container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+  }
+  .breadcrumbs {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  .property-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  .property-images {
+    display: grid;
+    grid-template-areas:
+      "main main"
+      "side1 side2"
+      "side3 side4";
+    gap: 10px;
+  }
+  .property-images img.main {
+    grid-area: main;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+  .property-images img.side {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+  .property-info {
+    padding-left: 20px;
+  }
+  .price {
+    color: #e74c3c;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  .amenities, .description, .map, .reviews, .policies {
+    margin: 20px 0;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  .description p {
+    margin: 10px 0;
+  }
+  .amenities ul {
+    list-style: none;
+    padding: 0;
+  }
+  .amenities ul li {
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+  }
+  .amenities ul li:before {
+    content: "✓";
+    color: #007BFF;
+    margin-right: 10px;
+  }
+  .map iframe {
+    width: 100%;
+    height: 400px;
+    border: 0;
+    border-radius: 4px;
+  }
+  .reviews .rating {
+    color: #ffd700;
+    font-size: 18px;
+  }
+  .reviews .review {
+    margin: 15px 0;
+  }
+  button {
+    background: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  button:hover {
+    background: #0056b3;
+  }
+  .collapsible {
+    background-color: #f1f1f1;
+    color: #333;
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+    text-align: left;
+    outline: none;
+    border-radius: 5px;
+  }
+  .content {
+    display: none;
+    padding: 10px 15px;
+  }
+  .active, .collapsible:hover {
+    background-color: #ddd;
+  }
+  .footer {
+    background: #007BFF;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .footer a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+  }
+  .footer a:hover {
+    text-decoration: underline;
+  }
+  .footer img {
+    height: 40px;
+  }
+  @media (max-width: 768px) {
+    .property-card {
+      grid-template-columns: 1fr;
+    }
+    .property-info {
+      padding-left: 0;
+    }
+    .property-images {
+      grid-template-areas:
+        "main"
+        "side1"
+        "side2"
+        "side3"
+        "side4";
+    }
+    .footer {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
